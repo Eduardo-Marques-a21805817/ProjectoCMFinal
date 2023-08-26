@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">ProjectoCMFinal</string>
+
+
+    <string name="drawerAbrir">Open</string>
+    <string name="drawerFechar">Close</string>
+
+
+    <string name="drawerDashboard">Dashboard</string>
+    <string name="Movies">Filmes</string>
+    <string name="Map">Mapa de filmes</string>
+    <string name="lista">Lista de filmes</string>
+    <string name="RegisterMovie">Registar Filme</string>
+    <string name="navbarListaFilmes">Lista de Filmes</string>
+    <!--<string name="NomeFrag"></string>-->
+    <string name="District">Districto:</string>
+    <string name="County">Concelho:</string>
+    <string name="Parish">Freguesia:</string>
+    <string name="Pontuação">pontuação:</string>
+    <string name="Observações">Observations:</string>
+    <string name="detalhe">Details</string>
+    <string name="contactoUrgente">Emergency call</string>
+    <array name="distritos">
+        <item>District</item>
+        <item>Aveiro</item>
+        <item>Beja</item>
+        <item>Braga</item>
+        <item>Bragança</item>
+        <item>Castelo Branco</item>
+        <item>Coimbra</item>
+        <item>Évora</item>
+        <item>Faro</item>
+        <item>Guarda</item>
+        <item>Leiria</item>
+        <item>Lisboa</item>
+        <item>Portalegre</item>
+        <item>Porto</item>
+        <item>Santarém</item>
+        <item>Setúbal</item>
+        <item>Viana do Castelo</item>
+        <item>Vila Real</item>
+        <item>Viseu</item>
+    </array>
+
+    <string name="numCCHint">Citizen Card Number</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="NameHint">Name</string>
+    <string name="buttonRegister">Register Fire</string>
+    <string name="DistanceLiteral">Distance in KM</string>
+    <string name="NomeLiteral">Name</string>
+    <string name="LocationLiteral">Location</string>
+    <string name="FilterLiteral">Filter</string>
+    <string name="PorConfirmar">To be confirmed</string>
+    <string name="InputInvalido">Invalid Input</string>
+</resources>

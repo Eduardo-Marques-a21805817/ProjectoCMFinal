@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/list_layout_frag"
+    android:transitionName="fragmentTransitionName"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/originalConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".fragments.ListaIncendiosFragment"
+
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/totalToolbarDetails">
+
+    <ImageView
+
+        android:id="@+id/bottomOfToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <GridLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:rowCount="3"
+           android:columnCount="3"
+           >
+
+
+
+       </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

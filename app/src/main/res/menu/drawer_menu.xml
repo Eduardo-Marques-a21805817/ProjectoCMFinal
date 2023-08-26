@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_drawerbutton"
+        android:title="@string/drawerDashboard">
+
+    </item>
+
+
+    <item
+        android:id="@+id/nav_mapaFilmes"
+        android:icon="@drawable/ic_drawerbutton"
+        android:title="@string/Map"
+        />
+    <item
+        android:id="@+id/nav_listaFilmes"
+        android:icon="@drawable/ic_drawerbutton"
+        android:title="@string/lista"
+
+        />
+
+
+
+    <item
+        android:id="@+id/nav_sair"
+        android:icon="@drawable/ic_drawerbutton"
+        android:title="Exit" />
+
+
+</menu>

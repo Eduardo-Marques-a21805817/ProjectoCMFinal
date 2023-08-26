@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<fragment
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="pt.ulusofona.deisi.cm2122.g21805817.fragments.ListaIncendiosFragment">-->
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/list_layout_frag"
+    android:transitionName="fragmentTransitionName"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/originalConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".fragments.ListaIncendiosFragment"
+
+        ><androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/totalToolbarDetails"
+            >
+
+            <ImageView
+
+                android:id="@+id/bottomOfToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_wave"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                />
+
+            <TextView
+                android:id="@+id/NomeFrag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/lista"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/bottomOfToolbar">
+
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/totalToolbarDetails"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+
+            tools:itemCount="17"
+            tools:layout_editor_absoluteX="5dp"
+            tools:listitem="@layout/movie_item_layout" />
+
+
+
+
+        <Button
+            android:id="@+id/buttonRegisterMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_gold"
+            android:padding="5dp"
+            android:text="@string/RegisterMovie"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/footer"
+            tools:layout_editor_absoluteX="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/estouEmPerigoLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:background="@color/dark_gold"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--
+        <LinearLayout
+            android:id="@+id/distanceFilterPopUP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/gray"
+            android:backgroundTint="#80000000"
+            android:gravity="center"
+
+
+            >
+            <FrameLayout
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:hint="@string/DistanceLiteral"
+                    android:id="@+id/distanceTextFilter"
+
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/FilterLiteral"
+                    android:id="@+id/distanceFilterButton"
+                    android:theme="@style/AppTheme">
+
+                </Button>
+
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/NameFilterPopUP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/gray"
+            android:backgroundTint="#80000000"
+            android:gravity="center"
+            android:clickable="true"
+            >
+            <FrameLayout
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:hint="@string/LocationLiteral"
+                    android:id="@+id/locationTextFilter"
+
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/FilterLiteral"
+                    android:id="@+id/NameFilterButton"
+                    android:theme="@style/AppTheme">
+
+                </Button>
+
+            </FrameLayout>
+
+        </LinearLayout>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+    <!--</fragment> -->
